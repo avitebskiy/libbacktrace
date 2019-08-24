@@ -5,14 +5,13 @@ project(backtrace C)
 option(BUILD_TESTS "Build tests." ON)
 
 set(INSTALL_LIB_DIR lib CACHE PATH "Installation directory for libraries")
-set(INSTALL_BIN_DIR bin CACHE PATH "Installation directory for executables")
-set(INSTALL_INCLUDE_DIR include/deepcore CACHE PATH "Installation directory for header files")
-set(INSTALL_SHARE_DIR share/deepcore CACHE PATH "Installation directory for documentation and examples")
+set(INSTALL_INCLUDE_DIR include/backtrace CACHE PATH "Installation directory for header files")
+set(INSTALL_SHARE_DIR share/backtrace CACHE PATH "Installation directory for documentation and examples")
 
 if(WIN32 AND NOT CYGWIN)
 	set(INSTALL_CMAKE_DIR CMake)
 else()
-	set(INSTALL_CMAKE_DIR lib/cmake/DeepCore)
+	set(INSTALL_CMAKE_DIR lib/cmake/backtrace)
 endif()
 
 # This file is a work in progress - some things may be broken,
