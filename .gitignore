@@ -3,3 +3,11 @@
 *.lo
 *.a
 *.la
+
+# Usual CMake build directory names
+build/
+build-*/
+cmake-build-*/
+
+# CLion files
+.idea/
